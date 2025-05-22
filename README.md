@@ -9,7 +9,6 @@
 
 ## 📁 현재 구성
 
-### 🐍 Python 실습
 
 # 🐍 Python 실습 모음 (2024.04.24 ~ 2024.05.14)
 
@@ -52,7 +51,7 @@
   
 ---
 
-### 🐬 MySQL 실습
+# 🐬 MySQL 실습
 
 - `Sakila_DBeaver_0516.sql` – Sakila DB 기반 실습 쿼리
 - `join_개념_0519.sql` – JOIN 구문 개념 정리
