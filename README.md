@@ -28,14 +28,15 @@ Python, SQL, 웹 개발, 데이터 분석 등 다양한 기술 스택을 실습 
 ## 📁 폴더 구조
 
 study-log/
-├── python_basics/ # 파이썬 기초 문법 (조건문, 반복문, 함수 등)
-├── python_projects/ # CLI 프로젝트, Streamlit 대시보드 등
-├── data_analysis/ # Pandas, sklearn 기반 데이터 전처리 및 분석
-├── db_practice/ # SQL 쿼리 실습 및 Python + DB 연동
-├── html_js_basics/ # HTML + JS 폼 및 기초 이벤트 처리
-├── error_handling/ # 예외 처리 실습 코드
-├── extra_notes/ # 리스트, 스택, 링크드리스트 등 보충 학습
-└── README.md
+├── python_basics/        # 파이썬 기초 문법 (조건문, 반복문, 함수 등)
+├── python_projects/      # CLI 프로젝트, Streamlit 대시보드 등
+├── data_analysis/        # Pandas, sklearn 기반 데이터 전처리 및 분석
+├── db_practice/          # SQL 쿼리 실습 및 Python + DB 연동
+├── html_js_basics/       # HTML + JS 폼 및 기초 이벤트 처리
+├── error_handling/       # 예외 처리 실습 코드
+├── extra_notes/          # 리스트, 스택, 링크드리스트 등 보충 학습
+└── README.md             # 프로젝트 소개 및 구조 설명 파일
+
 
 
 ---
