@@ -84,3 +84,4 @@ print("예측 결과 (VIP 여부):", model.predict(X_test_scaled))
 # 2️⃣ VIP 확률 예측
 print("예측 확률 (VIP일 확률):")
 print(model.predict_proba(X_test_scaled))  # [[0.8 0.2], [0.3 0.7] ...]
+

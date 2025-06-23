@@ -86,3 +86,48 @@ most_common = fruit_counts.most_common(1) #추출된 과일 리스트 중 숫자
 print(fruit_counts)
 print(most_common)
 
+# 예제11
+# from collections import Counter
+# words = ["python", "java", "python", "javascript", "java", "python", "c++", "java"]
+# word_counts = Counter(words) #단어들의 개수를 센다
+# print("모든 단어 개수:", word_counts)
+# print("가장 많이 나온 단어 상위 2개:", word_counts.most_common(2))
+# print("python이 나온 횟수:", word_counts["python"])
+# print("총 단어 개수:", sum(word_counts.values()))
+
+# 예제11: Counter를 활용한 데이터 분석
+# 다음 학생들의 성적 데이터가 있습니다.
+grades = ["A", "B", "A", "C", "B", "A", "D", "B", "C", "A", "B", "A"]
+
+# Counter를 사용하여 다음을 구현하세요:
+# 1. 각 성적의 개수를 출력하세요
+grades_counts = Counter(grades)
+print("1. 각 성적의 개수:", grades_counts)
+
+# 2. 가장 많이 나온 성적 상위 3개를 출력하세요  
+most_common = grades_counts.most_common(3)
+print("2. 가장 많이 나온 성적 상위 3개:", most_common)
+
+# 3. "A" 성적을 받은 학생 수를 출력하세요
+A_counts = grades_counts["A"]
+print(A_counts)
+# 4. 전체 학생 수를 출력하세요
+total_students = sum(grades_counts.values())
+print(total_students)
+# 5. "F" 성적을 받은 학생이 있는지 확인하고 개수를 출력하세요 (없으면 0 출력)
+
+# 방법1: Counter의 get() 메서드 사용 (가장 간단!)
+F_counts_method1 = grades_counts.get("F", 0)  # "F"가 없으면 0 반환
+print("방법1 - Counter.get():", F_counts_method1)
+
+# 방법2: 직접 for문으로 세기
+F_counts_method2 = 0
+for grade in grades:
+    if grade == "F":
+        F_counts_method2 += 1
+print("방법2 - for문으로 직접 세기:", F_counts_method2)
+
+# 방법3: list comprehension 사용
+F_list = [grade for grade in grades if grade == "F"]
+F_counts_method3 = len(F_list)
+print("방법3 - list comprehension:", F_counts_method3)

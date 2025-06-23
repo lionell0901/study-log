@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    HTML 속성 설명:
+    
+    1. id 속성:
+       - 모든 HTML 태그에 사용 가능
+       - 페이지 내에서 고유한 식별자 (중복 불가)
+       - CSS 선택자 (#id), JavaScript DOM 조작, 앵커 링크 등에 사용
+       - label의 for 속성과 연결하여 접근성 향상
+       
+    2. name 속성:
+       - 주로 폼 요소(input, select, textarea, button 등)에서 사용
+       - 서버로 데이터 전송 시 변수명 역할
+       - 라디오 버튼, 체크박스에서 그룹화 역할
+       - 같은 name을 가진 라디오 버튼은 하나만 선택 가능
+       - 폼 제출 시 name="값" 형태로 서버에 전송됨
+    -->
+    
+    <form action="">
+        <h1>연령대</h1>
+        <!-- for="age1"과 id="age1"을 연결하여 라벨 클릭 시 라디오 버튼 선택 -->
+        <label for="age1">10대</label><br>
+        <!-- name="age"로 모든 라디오 버튼을 그룹화, 서버 전송 시 age=1 형태 -->
+        <input type="radio" name="age" value="1" id="age1"><br/>
+        
+        <label for="age2">20대</label><br>
+        <input type="radio" name="age" value="2" id="age2"><br/>
+        
+        <label for="age3">30대</label><br>
+        <input type="radio" name="age" value="3" id="age3"><br/>
+        
+        <label for="age4">40대</label><br>
+        <input type="radio" name="age" value="4" id="age4"><br/>
+        
+        <br/>
+        <!-- 폼 제출 버튼: 선택된 라디오 버튼의 name=value가 서버로 전송 -->
+        <input type="submit" value="보내기">
+
+        <h1>지원하고자 하는 직업</h1>
+        <label for="job1">데이터분석가</label>
+        <input type="checkbox" value="1" name="job" id="job1"> <br/>
+        <label for="job2">빅데이터분석가</label>
+        <input type="checkbox" value="2" name="job" id="job1"> <br/>
+        <label for="job3">웹개발자</label>
+        <input type="checkbox" value="3" name="job" id="job1"> <br/>
+        <label for="job4">기획자</label>
+        <input type="checkbox" value="4" name="job" id="job1"> <br/>
+
+        <br/>
+        <input type="submit" value="보내기">
+    </form>
+</body>
+</html>
